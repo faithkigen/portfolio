@@ -1,0 +1,77 @@
+/* skill.css */
+
+#skills {
+    padding: 40px;
+    text-align: center;
+    color: hsl(0, 9%, 96%);
+    max-width: 50%;
+    margin: 0 aut0;
+  }
+  
+  .skillTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    color: hsl(44, 85%, 49%);
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .skillDesc {
+    font-size: 1rem;
+    margin: 20px 0;
+    font-weight: 300;
+    max-width: 15rem;
+    padding: 0 2rem;
+    text-align: left;
+  }
+  
+  .skillsBars {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    justify-content: space-around;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+  }
+  
+  .skillBar {
+    width: 250px;
+    /* Adjusted width for skill bars */
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    background: rgb(50, 50, 50);
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Added box shadow for depth */
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+  }
+  
+  .skillBar:hover {
+    transform: scale(1.05);
+    /* Scale up on hover for a slight effect */
+  }
+  
+  .skillBarImg {
+    object-fit: cover;
+    width: 4rem;
+    height: 6rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem; /* Add margin-bottom for spacing */
+  }
+  
+  .skillBarText h2 {
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: white;
+    font-style: italic;
+  }
+  
+  .skillBarText p {
+    font-size: 14px;
+    color: #777;
+  }
+  

@@ -1,0 +1,74 @@
+/* intro.css */
+
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    text-align: center;
+    padding: 40px 20px; /* Adjusted padding */
+    position: relative;
+  }
+  
+  .introContent {
+    max-width: 600px;
+  }
+  
+  .hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+  }
+  
+  .introText {
+    font-size:medium;
+    font-weight: bold;
+    margin: 10px 0;
+    color:white
+  }
+  
+  .IntroName {
+    color: #e9c916;
+    font-size: light;
+    font-style: italic;
+  }
+  
+  .IntroPara {
+    font-size: medium;
+    margin-bottom: 10px; 
+    color:white;
+    font-weight:300;
+    letter-spacing: 1px;
+  }
+  
+  .btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #4fa3d1;
+  }
+  
+  .bg {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 20px; 
+  }
+  @media screen and(max-width:840px) {
+    .bg {
+      right: -10vw;
+    }
+    .introContent{
+      font-size: 10vw;
+    }
+    .hello{
+      font-size: 4.5vw;
+    }
+  }
+  
