@@ -12,7 +12,7 @@ const Education = () => {
         <div className="EducationItem">
           <div className="EducationImg">
             <img src="Smc.png" alt="Social Media College" className="educationImg" />
-            <div className="Certificate in Digital Marketing Intensive">
+            <div className="EducationDetails">
               <h2>Social Media College</h2>
               <p>Year: 2023</p>
               <p>Location: Melbourne, Australia</p>

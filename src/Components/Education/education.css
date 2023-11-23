@@ -41,13 +41,15 @@
   
   .educationImg {
     object-fit: cover;
-    height: 300px;
-    width: 300px; 
+    width: 10vw;
+    height: 6rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
   }
   
   .EducationDetails  {
-    text-align: left;
-    margin-left: 10px;
+    text-align: bottom;
+    margin-top: 1rem;
   }
   
   .EducationDetails h2 {
