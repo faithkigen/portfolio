@@ -28,7 +28,7 @@
   .skillsBars {
     margin: 1.5rem;
     display: flex;
-    flex-direction: column; /* Change to column direction */
+    flex-direction: column; 
     justify-content: space-around;
     width: 100vw;
     max-width: 80%;
@@ -36,22 +36,20 @@
   }
   
   .skillBar {
-    width: 250px;
-    /* Adjusted width for skill bars */
+    width: 700px;
     background-color: #fff;
     padding: 1.5rem 2rem;
     background: rgb(50, 50, 50);
-    margin: 20px;
+    margin:10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Added box shadow for depth */
     transition: transform 0.3s ease-in-out;
     display: flex;
   }
   
   .skillBar:hover {
     transform: scale(1.05);
-    /* Scale up on hover for a slight effect */
+
   }
   
   .skillBarImg {
@@ -65,7 +63,7 @@
   .skillBarText h2 {
     font-size: 1rem;
     font-weight: bolder;
-    margin-bottom: 10px;
+    margin-right: 10px;
     color: white;
     font-style: italic;
   }
@@ -74,4 +72,19 @@
     font-size: 14px;
     color: #777;
   }
+  @media screen  and (max-width:720px){
+    .skillBarText>p{
+      font-size: 2vw;
+    }
+  }
   
+
+@media screen  and (max-width:480px){
+  .skillBarText>p{
+    font-size: 3vw;
+  }
+  .skillBarImg {
+    height:2.25rem;
+    width: 2.25rem;
+  }
+}

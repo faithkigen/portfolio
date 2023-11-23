@@ -1,0 +1,57 @@
+#works {
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem; /* Fix the typo here, change "o" to "0" */
+}
+
+.worksImg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Use space-around to distribute the images evenly */
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 65rem;
+    margin-top: 1rem; /* Add margin-top to separate the images from the description */
+}
+
+.worksImg img {
+    object-fit: cover;
+    height: 20rem;
+    margin: 0.5rem;
+    flex: 1; /* Make each image take equal width */
+}
+
+.worksBtn {
+    margin-top: 1rem; /* Adjust margin as needed */
+    padding: 0.5rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    background: white;
+    font-size: 1rem;
+    align-self: flex-end; 
+}
+
+.worksDesc {
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 45rem;
+}
+
+@media screen and (max-width: 585px) {
+    .worksImg {
+        flex-direction: column; /* Stack the images vertically on smaller screens */
+        align-items: center;
+    }
+
+    .worksImg img {
+        width: 100%; /* Make images take 100% width on smaller screens */
+        height: auto;
+    }
+}

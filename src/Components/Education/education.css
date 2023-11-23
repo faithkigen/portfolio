@@ -1,0 +1,112 @@
+/* education.css */
+#EducationPage {
+    min-height: calc(100vh - 4rem);
+    width: 200vw;
+    max-width: 100rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.EducationPage {
+    text-align: center;
+  }
+  
+  .EducationPageTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .EducationDesc {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+  
+  .EducationItem {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .EducationImg {
+    margin: 1rem 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .educationImg {
+    object-fit: cover;
+    height: 300px;
+    width: 300px; 
+  }
+  
+  .EducationDetails  {
+    text-align: left;
+    margin-left: 10px;
+  }
+  
+  .EducationDetails h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .EducationDetails p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .ContactPageTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+
+  .contactDesc{
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+  .contactForm{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+  }
+  
+  .name, .email, .msg{
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding-left: 0.5rem ;
+    color:white;
+    border: none;
+    border-radius: 0.5rem;
+  }
+
+  .submitBtn{
+    background: white;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 0.75rem 3.5 rem;
+  }
+  .links{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+
+  .link {
+    margin: 0 10px; 
+  }
