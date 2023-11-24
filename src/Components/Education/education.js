@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './education.css';
+import emailjs from '@emailjs/browser';
 
 const Education = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_05vcrxg', 'template_rabjxep', form.current, '2nzuFBpXFSOcTz_KxTHVl')
+      .then((result) => {
+        console.log(result.text);
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
+  };
+
   return (
     <section id="EducationPage">
       <div id="Education">
         <h1 className="EducationPageTitle">Education Background</h1>
         <p className="EducationDesc">
-          I have an education background in Business Information Technology and certifications in Software Engineering and Digital Marketing
+          I have an education background in Business Information Technology and certifications in Software Engineering and Digital Marketing.
         </p>
         <div className="EducationItem">
           <div className="EducationImg">
@@ -36,21 +52,27 @@ const Education = () => {
           </div>
         </div>
       </div>
+
       <div id="contact"></div>
-      <h1 className="ContactPageTitle"> Contact Me</h1>
-      <span className="ContactDesc"> Please fill the form below to discuss any work oportunities. </span>
-      <form className="contactForm">
-        <input type="text" className="name" placeholder="Your Name"/>
-        <input type="email" className="email" placeholder="Your Email"/>
-        <textarea className="msg" name="message" rows="5" placeholder="You Message"></textarea>
-        <button type="submit" value="send" className="submitBtn"> Submit</button>
-        <div className="Links"></div>
-        <img src="InstagramIcon.png" alt="Instagram" className="link"/>
-        <img src="LinkedInIcon.png" alt="LinkedIn" className="link"/>
-        <img src="FacebookIcon.png" alt="Facebook" className="link"/>
-        <img src="TwitterIcon.png" alt="X" className="link"/>
-        
+
+      <h1 className="ContactPageTitle">Contact Me</h1>
+      <span className="ContactDesc">
+        Please fill the form below to discuss any work opportunities.
+      </span>
+
+      <form className="contactForm" ref={form} onSubmit={sendEmail}>
+        <input type="text" className="name" placeholder="Your Name" name="you_name" required />
+        <input type="email" className="email" placeholder="Your Email" name="you_email" required />
+        <textarea className="msg" name="message" rows="5" placeholder="Your Message" required />
+        <button type="submit" value="Send" className="submitBtn">Submit</button>
       </form>
+
+      <div className="Links">
+        <img src="InstagramIcon.png" alt="Instagram" className="link" />
+        <img src="LinkedInIcon.png" alt="LinkedIn" className="link" />
+        <img src="FacebookIcon.png" alt="Facebook" className="link" />
+        <img src="TwitterIcon.png" alt="Twitter" className="link" />
+      </div>
     </section>
   );
 };
