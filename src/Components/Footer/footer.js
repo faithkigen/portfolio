@@ -5,6 +5,7 @@ const Footer = () => {
   return (
    <footer className="footer">
     copyright 2023 Faith Kigen. All rights received
+    0702358770
    </footer>
   )
 }

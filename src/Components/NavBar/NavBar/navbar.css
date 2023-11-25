@@ -60,11 +60,7 @@
     padding-bottom: 0.5rem;
     border-bottom: 3px solid yellow;
   }
-  .mobMenu{
-    display: none;
-    object-fit:cover ;
-    height: 1.8rem;
-  }
+  
   .navMenu{
     position: absolute;
     top: 4rem;

@@ -12,6 +12,8 @@ const Education = () => {
       .sendForm('service_05vcrxg', 'template_rabjxep', form.current, '2nzuFBpXFSOcTz_KxTHVl')
       .then((result) => {
         console.log(result.text);
+        alert('Email sent')
+        e.target.reset
       })
       .catch((error) => {
         console.log(error.text);
