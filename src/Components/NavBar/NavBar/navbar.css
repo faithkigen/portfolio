@@ -1,81 +1,77 @@
-/* navbar.css */
+/* Navbar Styling */
 
 .navbar {
-  background: rgb(30,30,30);
-    height: 5rem;
-    width: 100vw;
-    max-width: 75rem;
-    margin:0 auto;
-    padding: 1rem 2 rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 3;
+  background-color: rgb(30,30,30);
+  height: 5rem;
+  width: 100vw;
+  max-width: 75rem;
+  margin:0 auto;
+  padding: 1rem 2 rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
 
-  }
-  .logo{
-    object-fit: cover;
-    height: 3rem;
-    width:3rem;
-  
+.logo {
+  object-fit: cover;
+  height: 3rem;
+  width:3rem;
+}
+
+.desktopMenu {
+  display: flex;
+  align-items: center;
+}
+
+.desktopMenuItem {
+  margin: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.desktopMenuItem:hover {
+  color: rgb(252, 230, 36);
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+  transition: width 0.3s;
+}
+
+.desktopMenuBtn {
+  background-color: #0a0a0a;
+  color: whitesmoke;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.mobMenu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .mobMenu {
+    display: block;
   }
 
-  .desktopMenuItem{
-    margin: 1rem;
-    cursor: pointer;
-  }
-  .desktopMenuItem:hover{
-    color: rgb(252, 230, 36);
-    padding: bottom 0.5rem;
-    border-bottom: 3px solid yellow;
-    transition: width 0.3s;
+  .desktopMenu {
+    display: none;
   }
 
- 
-
-  .desktopMenuBtn{
-    background-color: #0a0a0a;
-    color: whitesmoke;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1rem;
-    border-radius: 2rem;
-
-  }
-  .desktopMenuImg{
-    object-fit: cover;
-    height:2rem;
-    width:2rem;
-    margin: 1rem;
-    color: rgb(221, 14, 14);
-
-  }
-
-  .active{
-    color:yellow;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid yellow;
-  }
-  
-  .navMenu{
-    position: absolute;
-    top: 4rem;
-    right: 2rem;
-    display:flex;
-    flex-direction: column;
-    padding: 0.5rem;
-    height: fit-content;
-    min-width: 15rem;
-    background: rgb(40, 40,40);
-    border-radius: 1rem;
-  }
-  .listItem{
+  .listMenuItem {
+    text-decoration: none;
     color: white;
-    padding: 0.5rem 3rem;
-    margin: 0.25rem;
-    background: rgb(30,30,30);
+    font-size: 18px;
+    margin: 1rem;
   }
+}

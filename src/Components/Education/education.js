@@ -13,7 +13,7 @@ const Education = () => {
       .then((result) => {
         console.log(result.text);
         alert('Email sent')
-        e.target.reset
+        e.target.reset()
       })
       .catch((error) => {
         console.log(error.text);
