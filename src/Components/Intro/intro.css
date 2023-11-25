@@ -60,9 +60,10 @@
     height: auto;
     margin-top: 20px; 
   }
-  @media screen and(max-width:840px) {
-    .bg {
-      right: -10vw;
+  @media screen and (max-width: 768px) {
+    #intro {
+      flex-direction: column-reverse;
+      padding: 1rem;
     }
     .introContent{
       font-size: 10vw;
