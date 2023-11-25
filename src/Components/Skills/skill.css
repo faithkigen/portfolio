@@ -70,7 +70,7 @@
   
   .skillBarText p {
     font-size: 14px;
-    color: #777;
+    color: hsl(0, 7%, 97%);
   }
   @media screen  and (max-width:720px){
     .skillBarText>p{

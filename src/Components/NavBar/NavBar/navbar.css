@@ -5,8 +5,8 @@
   height: 5rem;
   width: 100vw;
   max-width: 75rem;
-  margin:0 auto;
-  padding: 1rem 2 rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,7 +18,7 @@
 .logo {
   object-fit: cover;
   height: 3rem;
-  width:3rem;
+  width: 3rem;
 }
 
 .desktopMenu {
@@ -59,6 +59,16 @@
   cursor: pointer;
 }
 
+.contactBtn {
+  background-color: #f2f2f2;
+  color: #0a0a0a;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: none;
+}
+
 @media (max-width: 768px) {
   .mobMenu {
     display: block;
@@ -73,5 +83,10 @@
     color: white;
     font-size: 18px;
     margin: 1rem;
+  }
+
+  .contactBtn {
+    display: block;
+    margin-left: auto;
   }
 }
